@@ -1,0 +1,359 @@
+[
+  {
+    "age": 20,
+    "avgMonthlyPremium": 14,
+    "lifeEvents": ["Starting career", "Student loans", "Entry-level income"],
+    "coverageRecommendation": "10-15x annual income, minimum $250K",
+    "topConcerns": ["Affordability", "Student debt protection", "Future family planning"]
+  },
+  {
+    "age": 21,
+    "avgMonthlyPremium": 14,
+    "lifeEvents": ["College graduation", "First job", "Building credit"],
+    "coverageRecommendation": "10-15x annual income, minimum $250K",
+    "topConcerns": ["Affordability", "Locking in low rates early", "Debt coverage"]
+  },
+  {
+    "age": 22,
+    "avgMonthlyPremium": 15,
+    "lifeEvents": ["Career launch", "Moving out", "First apartment"],
+    "coverageRecommendation": "10-15x annual income, minimum $250K",
+    "topConcerns": ["Affordable premiums", "Long-term coverage", "Flexibility"]
+  },
+  {
+    "age": 23,
+    "avgMonthlyPremium": 15,
+    "lifeEvents": ["Career growth", "Saving for first home", "Travel"],
+    "coverageRecommendation": "10-15x annual income, minimum $250K",
+    "topConcerns": ["Locking in low premiums", "Financial independence", "Future planning"]
+  },
+  {
+    "age": 24,
+    "avgMonthlyPremium": 16,
+    "lifeEvents": ["Relationship milestones", "Career advancement", "Financial growth"],
+    "coverageRecommendation": "10-15x annual income, minimum $300K",
+    "topConcerns": ["Partner protection", "Debt coverage", "Long-term security"]
+  },
+  {
+    "age": 25,
+    "avgMonthlyPremium": 16,
+    "lifeEvents": ["Marriage consideration", "First major salary increase", "Retirement saving"],
+    "coverageRecommendation": "10-15x annual income, minimum $300K",
+    "topConcerns": ["Marriage planning", "Future family coverage", "Locking in healthy rates"]
+  },
+  {
+    "age": 26,
+    "avgMonthlyPremium": 17,
+    "lifeEvents": ["Age off parents health insurance", "Career establishment", "Possible marriage"],
+    "coverageRecommendation": "10-15x annual income, minimum $300K",
+    "topConcerns": ["Health insurance transition", "Income protection", "Starting a family"]
+  },
+  {
+    "age": 27,
+    "avgMonthlyPremium": 17,
+    "lifeEvents": ["Marriage", "Home purchase consideration", "Growing income"],
+    "coverageRecommendation": "10x annual income, minimum $350K",
+    "topConcerns": ["Spouse protection", "Mortgage coverage", "Future children planning"]
+  },
+  {
+    "age": 28,
+    "avgMonthlyPremium": 18,
+    "lifeEvents": ["Growing family", "Home purchase", "Career milestone"],
+    "coverageRecommendation": "10-12x annual income, minimum $400K",
+    "topConcerns": ["Family income replacement", "Mortgage protection", "Child education funding"]
+  },
+  {
+    "age": 29,
+    "avgMonthlyPremium": 18,
+    "lifeEvents": ["Family expansion", "Career growth", "Increased expenses"],
+    "coverageRecommendation": "10-12x annual income, minimum $400K",
+    "topConcerns": ["Family financial security", "Debt coverage", "Long-term planning"]
+  },
+  {
+    "age": 30,
+    "avgMonthlyPremium": 20,
+    "lifeEvents": ["Growing family", "Career peak growth", "Bigger home", "Retirement saving"],
+    "coverageRecommendation": "10-12x annual income, $500K-$1M",
+    "topConcerns": ["Income replacement for family", "Mortgage protection", "Children's future"]
+  },
+  {
+    "age": 31,
+    "avgMonthlyPremium": 21,
+    "lifeEvents": ["Second child", "Home upgrade", "Management role"],
+    "coverageRecommendation": "10-12x annual income, $500K-$1M",
+    "topConcerns": ["Multiple dependents", "Higher mortgage", "Education funding"]
+  },
+  {
+    "age": 32,
+    "avgMonthlyPremium": 21,
+    "lifeEvents": ["Career advancement", "Investment portfolio growth", "Family milestone"],
+    "coverageRecommendation": "10-12x annual income, $500K-$1M",
+    "topConcerns": ["Asset protection", "Family income replacement", "Business interests"]
+  },
+  {
+    "age": 33,
+    "avgMonthlyPremium": 22,
+    "lifeEvents": ["Children in school", "Home improvements", "Investment diversification"],
+    "coverageRecommendation": "10x annual income, $500K-$1M",
+    "topConcerns": ["Education savings", "Career risk", "Family legacy"]
+  },
+  {
+    "age": 34,
+    "avgMonthlyPremium": 23,
+    "lifeEvents": ["School-age children", "Career leadership", "Financial planning"],
+    "coverageRecommendation": "10x annual income, $500K-$1M",
+    "topConcerns": ["College funding", "Aging parents", "Business continuity"]
+  },
+  {
+    "age": 35,
+    "avgMonthlyPremium": 24,
+    "lifeEvents": ["Children in primary school", "Career peak", "Wealth building"],
+    "coverageRecommendation": "10x annual income, $500K-$1.5M",
+    "topConcerns": ["Family income protection", "Retirement planning", "Estate planning"]
+  },
+  {
+    "age": 36,
+    "avgMonthlyPremium": 25,
+    "lifeEvents": ["Active parenting", "Home equity growth", "Leadership roles"],
+    "coverageRecommendation": "10x annual income, $500K-$1.5M",
+    "topConcerns": ["Long-term income security", "Wealth transfer", "Business risk"]
+  },
+  {
+    "age": 37,
+    "avgMonthlyPremium": 26,
+    "lifeEvents": ["Teenagers approaching", "College savings urgency", "Career milestone"],
+    "coverageRecommendation": "8-10x annual income, $500K-$1M",
+    "topConcerns": ["College funding gaps", "Income replacement", "Estate considerations"]
+  },
+  {
+    "age": 38,
+    "avgMonthlyPremium": 27,
+    "lifeEvents": ["Pre-teen children", "Approaching peak earnings", "Investment focus"],
+    "coverageRecommendation": "8-10x annual income, $500K-$1M",
+    "topConcerns": ["Wealth preservation", "Income continuity", "Tax planning"]
+  },
+  {
+    "age": 39,
+    "avgMonthlyPremium": 28,
+    "lifeEvents": ["Teenage children", "Peak career investments", "College planning"],
+    "coverageRecommendation": "8-10x annual income, $500K-$1M",
+    "topConcerns": ["College costs", "Career longevity", "Retirement security"]
+  },
+  {
+    "age": 40,
+    "avgMonthlyPremium": 30,
+    "lifeEvents": ["Teenage children", "Peak earnings decade", "Serious retirement planning"],
+    "coverageRecommendation": "8-10x annual income, $500K-$1M",
+    "topConcerns": ["Final push for coverage", "Premium increases ahead", "Estate planning"]
+  },
+  {
+    "age": 41,
+    "avgMonthlyPremium": 33,
+    "lifeEvents": ["Children nearing college", "Career authority", "Estate planning start"],
+    "coverageRecommendation": "8-10x annual income, $500K-$1M",
+    "topConcerns": ["Estate taxes", "College funding last push", "Retirement readiness"]
+  },
+  {
+    "age": 42,
+    "avgMonthlyPremium": 35,
+    "lifeEvents": ["College-bound children", "Peak salary", "Wealth building"],
+    "coverageRecommendation": "8x annual income, $500K-$1M",
+    "topConcerns": ["Education expenses", "Legacy planning", "Coverage adequacy"]
+  },
+  {
+    "age": 43,
+    "avgMonthlyPremium": 37,
+    "lifeEvents": ["Helping children through college", "Retirement account growth", "Career experience value"],
+    "coverageRecommendation": "7-8x annual income, $400K-$750K",
+    "topConcerns": ["Remaining debt load", "Business succession", "Retirement timeline"]
+  },
+  {
+    "age": 44,
+    "avgMonthlyPremium": 39,
+    "lifeEvents": ["Sending kids to college", "Lifestyle upgrade", "Investment portfolio review"],
+    "coverageRecommendation": "7-8x annual income, $400K-$750K",
+    "topConcerns": ["Income protection with fewer years remaining", "Whole life conversion", "Beneficiary updates"]
+  },
+  {
+    "age": 45,
+    "avgMonthlyPremium": 42,
+    "lifeEvents": ["Empty nester approaching", "Peak net worth growth", "Health awareness increasing"],
+    "coverageRecommendation": "7-8x annual income, $400K-$750K",
+    "topConcerns": ["Health-based rate changes", "Long-term care planning", "Simplified estate"]
+  },
+  {
+    "age": 46,
+    "avgMonthlyPremium": 46,
+    "lifeEvents": ["Children leaving home", "Aggressive retirement saving", "Health check focus"],
+    "coverageRecommendation": "6-7x annual income, $350K-$700K",
+    "topConcerns": ["Health status impact on premiums", "Retirement security", "Spouse coverage"]
+  },
+  {
+    "age": 47,
+    "avgMonthlyPremium": 49,
+    "lifeEvents": ["Empty nest transition", "Career mentoring others", "Investment maturity"],
+    "coverageRecommendation": "6-7x annual income, $350K-$700K",
+    "topConcerns": ["Long-term care needs", "Retirement income bridging", "Legacy gifts"]
+  },
+  {
+    "age": 48,
+    "avgMonthlyPremium": 53,
+    "lifeEvents": ["Reviewing retirement plans", "Empty nest", "Pre-retirement lifestyle planning"],
+    "coverageRecommendation": "6-7x annual income, $350K-$700K",
+    "topConcerns": ["Retirement income supplement", "Spouse protection", "Estate simplification"]
+  },
+  {
+    "age": 49,
+    "avgMonthlyPremium": 57,
+    "lifeEvents": ["Pre-50 financial assessment", "Health monitoring", "Retirement countdown"],
+    "coverageRecommendation": "5-7x annual income, $300K-$600K",
+    "topConcerns": ["Premium costs rising significantly", "Policy review", "Wealth transfer"]
+  },
+  {
+    "age": 50,
+    "avgMonthlyPremium": 62,
+    "lifeEvents": ["Major milestone birthday", "Retirement planning acceleration", "Legacy conversations"],
+    "coverageRecommendation": "5-7x annual income, $250K-$500K",
+    "topConcerns": ["Final coverage window at reasonable rates", "Long-term care alternatives", "Estate taxes"]
+  },
+  {
+    "age": 51,
+    "avgMonthlyPremium": 68,
+    "lifeEvents": ["Social Security planning", "Medicare awareness", "Downsizing consideration"],
+    "coverageRecommendation": "5-6x annual income, $250K-$500K",
+    "topConcerns": ["Securing coverage before health changes", "Estate planning", "Beneficiary planning"]
+  },
+  {
+    "age": 52,
+    "avgMonthlyPremium": 74,
+    "lifeEvents": ["Retirement account maximization", "Health focus", "Investment rebalancing"],
+    "coverageRecommendation": "5-6x annual income, $250K-$500K",
+    "topConcerns": ["Locking in coverage before 55", "Spouse and dependent needs", "Business buyout coverage"]
+  },
+  {
+    "age": 53,
+    "avgMonthlyPremium": 80,
+    "lifeEvents": ["Grandchildren milestone", "Health screening regularity", "Career wrap-up planning"],
+    "coverageRecommendation": "4-6x annual income, $200K-$500K",
+    "topConcerns": ["Final expense planning", "Legacy gifts", "Healthcare costs in retirement"]
+  },
+  {
+    "age": 54,
+    "avgMonthlyPremium": 87,
+    "lifeEvents": ["Pre-retirement assessment", "Transitional career", "Healthcare planning"],
+    "coverageRecommendation": "4-5x annual income, $200K-$400K",
+    "topConcerns": ["Premium versus benefit analysis", "Retirement income protection", "Terminal illness benefits"]
+  },
+  {
+    "age": 55,
+    "avgMonthlyPremium": 95,
+    "lifeEvents": ["Pre-retirement lifestyle shift", "Catch-up contributions", "Social Security strategy"],
+    "coverageRecommendation": "4-5x annual income, $200K-$400K",
+    "topConcerns": ["Retirement income supplementation", "Legacy planning", "Health insurance bridge to Medicare"]
+  },
+  {
+    "age": 56,
+    "avgMonthlyPremium": 104,
+    "lifeEvents": ["Early retirement exploration", "Grandchildren planning", "Estate finalization"],
+    "coverageRecommendation": "3-5x annual income, $150K-$400K",
+    "topConcerns": ["Estate liquidity", "Final expense coverage", "Spouse income protection"]
+  },
+  {
+    "age": 57,
+    "avgMonthlyPremium": 114,
+    "lifeEvents": ["Retirement countdown", "Health insurance review", "Asset distribution planning"],
+    "coverageRecommendation": "3-5x annual income, $150K-$350K",
+    "topConcerns": ["Coverage affordability", "Death benefit adequacy", "Tax implications"]
+  },
+  {
+    "age": 58,
+    "avgMonthlyPremium": 124,
+    "lifeEvents": ["Near retirement", "Medicare eligibility planning", "Estate documents finalized"],
+    "coverageRecommendation": "3-4x annual income, $150K-$300K",
+    "topConcerns": ["Premium cost versus benefit value", "Living benefits access", "Legacy amount"]
+  },
+  {
+    "age": 59,
+    "avgMonthlyPremium": 135,
+    "lifeEvents": ["Final year pre-Social Security", "Employer plan transition", "Retirement rehearsal"],
+    "coverageRecommendation": "3-4x annual income, $150K-$300K",
+    "topConcerns": ["Retirement income bridge", "Spouse coverage adequacy", "Estate tax threshold"]
+  },
+  {
+    "age": 60,
+    "avgMonthlyPremium": 148,
+    "lifeEvents": ["Retirement eligibility", "Medicare Part A eligibility at 65 approaching", "Social Security strategy"],
+    "coverageRecommendation": "2-4x annual income, $100K-$300K",
+    "topConcerns": ["Final expense coverage", "Legacy goals", "Chronic illness riders"]
+  },
+  {
+    "age": 61,
+    "avgMonthlyPremium": 162,
+    "lifeEvents": ["Early Social Security option", "Reduced workforce hours", "Health plan changes"],
+    "coverageRecommendation": "2-3x annual income, $100K-$250K",
+    "topConcerns": ["Affordability at higher premiums", "Whole life cash value", "Estate planning"]
+  },
+  {
+    "age": 62,
+    "avgMonthlyPremium": 177,
+    "lifeEvents": ["Social Security begins (reduced)", "Retirement acceleration", "Health monitoring"],
+    "coverageRecommendation": "2-3x annual income, $100K-$250K",
+    "topConcerns": ["Final expense coverage", "Estate liquidity", "Living benefits"]
+  },
+  {
+    "age": 63,
+    "avgMonthlyPremium": 194,
+    "lifeEvents": ["Retirement imminent", "Medicare 2 years away", "Portfolio drawdown begins"],
+    "coverageRecommendation": "2-3x annual income, $100K-$200K",
+    "topConcerns": ["Policy affordability", "Remaining obligations", "Spouse security"]
+  },
+  {
+    "age": 64,
+    "avgMonthlyPremium": 213,
+    "lifeEvents": ["Pre-Medicare final year", "Retirement transition complete", "Estate review"],
+    "coverageRecommendation": "2-3x annual income, $100K-$200K",
+    "topConcerns": ["Final expense planning", "Healthcare gap coverage", "Charitable legacy"]
+  },
+  {
+    "age": 65,
+    "avgMonthlyPremium": 235,
+    "lifeEvents": ["Medicare eligibility", "Full Social Security option", "Active retirement"],
+    "coverageRecommendation": "$50K-$150K for final expenses and estate",
+    "topConcerns": ["Final expense coverage", "Estate settlement costs", "Legacy to grandchildren"]
+  },
+  {
+    "age": 66,
+    "avgMonthlyPremium": 258,
+    "lifeEvents": ["Full retirement benefits", "Medicare enrolled", "Travel and leisure"],
+    "coverageRecommendation": "$50K-$150K for final expenses",
+    "topConcerns": ["Simplified issue policies", "Burial costs", "Inheritance planning"]
+  },
+  {
+    "age": 67,
+    "avgMonthlyPremium": 284,
+    "lifeEvents": ["Full retirement in effect", "Health management focus", "Family support"],
+    "coverageRecommendation": "$25K-$100K for final expenses",
+    "topConcerns": ["Guaranteed issue options", "Premium affordability on fixed income", "Burial costs"]
+  },
+  {
+    "age": 68,
+    "avgMonthlyPremium": 312,
+    "lifeEvents": ["Active senior lifestyle", "Legacy giving", "Estate review"],
+    "coverageRecommendation": "$25K-$100K for final expenses",
+    "topConcerns": ["Fixed income strain", "Estate costs", "Spousal coverage"]
+  },
+  {
+    "age": 69,
+    "avgMonthlyPremium": 343,
+    "lifeEvents": ["Estate distribution planning", "Health focus", "Family gatherings"],
+    "coverageRecommendation": "$25K-$75K for final expenses",
+    "topConcerns": ["Guaranteed acceptance options", "Burial and probate costs", "Remaining debts"]
+  },
+  {
+    "age": 70,
+    "avgMonthlyPremium": 378,
+    "lifeEvents": ["Senior milestone", "Major estate review", "Long-term care planning"],
+    "coverageRecommendation": "$10K-$50K for final expenses",
+    "topConcerns": ["Guaranteed issue life insurance", "Final expense coverage", "Spouse protection on fixed income"]
+  }
+]

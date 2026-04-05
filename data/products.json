@@ -1,0 +1,58 @@
+{
+  "term-life": {
+    "name": "Term Life Insurance",
+    "slug": "term-life-insurance",
+    "shortDescription": "Affordable coverage for a specific period — 10, 15, 20, or 30 years.",
+    "longDescription": "Term life insurance provides a death benefit to your beneficiaries if you pass away during the policy term. It is the most straightforward and affordable type of life insurance. You pay a fixed premium for a set number of years, and your family receives a tax-free payout if you die while the policy is active. Most term policies can be converted to permanent coverage without a new medical exam.",
+    "pros": ["Lowest premiums", "Simple to understand", "Flexible terms", "Convertible to permanent insurance", "Level premiums for the entire term"],
+    "cons": ["No cash value", "Coverage expires at end of term", "Premiums increase significantly at renewal", "No return of premium unless rider added"],
+    "bestFor": ["Young families", "Mortgage protection", "Income replacement", "Those on a budget", "Business loan coverage"],
+    "avgMonthlyPremium": 26,
+    "termOptions": [10, 15, 20, 25, 30],
+    "coverageRange": { "min": 100000, "max": 5000000 }
+  },
+  "whole-life": {
+    "name": "Whole Life Insurance",
+    "slug": "whole-life-insurance",
+    "shortDescription": "Permanent lifetime coverage with a cash value component that grows tax-deferred.",
+    "longDescription": "Whole life insurance provides coverage for your entire life, as long as premiums are paid. A portion of each premium payment goes into a cash value account that grows at a guaranteed rate. You can borrow against or withdraw from the cash value tax-free. The premium, death benefit, and rate of return are all guaranteed, making whole life insurance a stable long-term financial tool.",
+    "pros": ["Lifelong coverage", "Builds cash value", "Guaranteed death benefit", "Tax-deferred growth", "Dividend-paying options", "Stable fixed premiums"],
+    "cons": ["Higher premiums than term", "Slower cash value growth vs. investments", "Complex product structure", "Less flexible than universal life"],
+    "bestFor": ["Estate planning", "High-income earners", "Business owners", "Permanent coverage needs", "Tax-advantaged savings"],
+    "avgMonthlyPremium": 115,
+    "coverageRange": { "min": 25000, "max": 10000000 }
+  },
+  "health": {
+    "name": "Health Insurance",
+    "slug": "health-insurance",
+    "shortDescription": "Comprehensive medical coverage for individuals and families, including ACA-compliant plans.",
+    "longDescription": "Health insurance helps cover the cost of medical care, including doctor visits, hospital stays, prescription drugs, and preventive care. Plans are available through employers, the ACA marketplace, Medicaid, and Medicare. Key terms to understand include premiums, deductibles, copayments, coinsurance, and out-of-pocket maximums. Choosing the right plan depends on your expected healthcare utilization and budget.",
+    "pros": ["Covers major medical expenses", "Preventive care often free", "Protection from catastrophic costs", "Access to provider network discounts", "ACA subsidies available"],
+    "cons": ["Monthly premiums can be high", "Deductibles and copays add costs", "Network restrictions", "Complex plan comparisons"],
+    "bestFor": ["Individuals without employer coverage", "Freelancers and self-employed", "Families needing comprehensive coverage", "Those with ongoing medical needs"],
+    "avgMonthlyPremium": 456,
+    "planTypes": ["HMO", "PPO", "EPO", "HDHP with HSA"]
+  },
+  "auto": {
+    "name": "Auto Insurance",
+    "slug": "auto-insurance",
+    "shortDescription": "Financial protection for your vehicle and liability in case of accidents.",
+    "longDescription": "Auto insurance provides financial protection if you are involved in a car accident or your vehicle is damaged. State laws require minimum liability coverage, but full coverage options include comprehensive (theft, weather) and collision (accidents). Rates are determined by driving record, vehicle type, location, age, and credit score in most states.",
+    "pros": ["Required by law (liability)", "Protects against major financial loss", "Covers third-party injuries and damages", "Roadside assistance options", "Rental car coverage available"],
+    "cons": ["Can be expensive for young drivers", "Rates increase after accidents", "Deductibles can be high", "Comprehensive coverage may exceed car value"],
+    "bestFor": ["All vehicle owners", "New car owners needing full coverage", "High-risk drivers seeking SR-22", "Collectors with classic cars"],
+    "avgMonthlyPremium": 127,
+    "coverageTypes": ["Liability", "Collision", "Comprehensive", "Uninsured Motorist", "Medical Payments"]
+  },
+  "home": {
+    "name": "Home Insurance",
+    "slug": "home-insurance",
+    "shortDescription": "Protection for your home, personal belongings, and personal liability.",
+    "longDescription": "Homeowners insurance protects your home's structure, your personal belongings, and provides liability coverage if someone is injured on your property. Mortgage lenders typically require homeowners insurance. Standard policies cover damage from fire, theft, wind, and other named perils. Flood and earthquake coverage typically require separate policies.",
+    "pros": ["Protects largest asset", "Required by mortgage lenders", "Covers personal liability", "Temporary living expenses if home uninhabitable", "Replacement cost options available"],
+    "cons": ["Flood and earthquake excluded", "Premiums vary widely by location", "Deductibles apply", "Policy limits may be insufficient", "Claims can raise rates"],
+    "bestFor": ["Homeowners with mortgages", "Investment property owners", "Homeowners in disaster-prone areas", "Those with valuable personal property"],
+    "avgMonthlyPremium": 101,
+    "coverageComponents": ["Dwelling", "Other Structures", "Personal Property", "Loss of Use", "Personal Liability", "Medical Payments"]
+  }
+}
