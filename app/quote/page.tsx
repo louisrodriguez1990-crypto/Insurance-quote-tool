@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from "react";
-import type { Metadata } from "next";
 
 const US_STATES = [
   "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",

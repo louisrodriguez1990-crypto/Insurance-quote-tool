@@ -92,7 +92,7 @@ const articles = [
   },
 ];
 
-const categories = [...new Set(articles.map((a) => a.category))];
+const categories = Array.from(new Set(articles.map((a) => a.category)));
 
 export default function LearnPage() {
   return (
