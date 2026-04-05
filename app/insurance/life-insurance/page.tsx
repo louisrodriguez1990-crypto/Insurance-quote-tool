@@ -121,9 +121,9 @@ export default function LifeInsurancePage() {
           <p className="text-gray-700 mb-4">
             According to LIMRA's 2023 Insurance Barometer Study, 40% of Americans say they don't have enough life insurance. Yet nearly half say they wouldn't be able to cover living expenses beyond two months if the primary wage earner died. Life insurance bridges this gap.
           </p>
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-6">
-            <p className="text-blue-800 font-medium">Key Takeaway</p>
-            <p className="text-blue-700 text-sm mt-1">Life insurance is not about you — it's about the people who depend on your income. If someone would suffer financially from your death, you likely need coverage.</p>
+          <div className="bg-brand-50 border border-brand-200 rounded-lg p-4 mt-6">
+            <p className="text-brand-900 font-medium">Key Takeaway</p>
+            <p className="text-brand-700 text-sm mt-1">Life insurance is not about you — it's about the people who depend on your income. If someone would suffer financially from your death, you likely need coverage.</p>
           </div>
         </section>
 
@@ -217,7 +217,7 @@ export default function LifeInsurancePage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-brand-700 text-white">
+                <tr className="bg-brand-900 text-white">
                   <th className="text-left p-3 rounded-tl-lg">Life Stage</th>
                   <th className="text-left p-3">Recommended Coverage</th>
                   <th className="text-left p-3 rounded-tr-lg">Policy Type</th>

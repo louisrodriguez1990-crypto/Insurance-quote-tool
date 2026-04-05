@@ -141,7 +141,7 @@ export default function StatePage({ params }: { params: { state: string } }) {
             { label: "Avg. Life Premium", value: "$" + state.avgTermLifePremium + "/mo" },
             { label: "Cost of Living", value: state.costOfLivingIndex + " / 100" },
           ].map(({ label, value }) => (
-            <div key={label} className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+            <div key={label} className="bg-neutral-50 border border-neutral-200 rounded-xl p-4 text-center">
               <div className="text-2xl font-extrabold text-brand-700">{value}</div>
               <div className="text-xs text-gray-500 mt-1">{label}</div>
             </div>
@@ -164,9 +164,9 @@ export default function StatePage({ params }: { params: { state: string } }) {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             {state.name} Life Insurance Regulations
           </h2>
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-4">
-            <p className="text-blue-800 font-semibold mb-2">Regulated by the {state.name} Department of Insurance</p>
-            <p className="text-blue-700 text-sm mb-3">{state.regulatoryNotes}</p>
+          <div className="bg-brand-50 border border-brand-200 rounded-xl p-5 mb-4">
+            <p className="text-brand-900 font-semibold mb-2">Regulated by the {state.name} Department of Insurance</p>
+            <p className="text-brand-700 text-sm mb-3">{state.regulatoryNotes}</p>
             <a
               href={state.insuranceDeptUrl}
               target="_blank"
@@ -240,7 +240,7 @@ export default function StatePage({ params }: { params: { state: string } }) {
         {/* Cities + Related */}
         <section className="grid md:grid-cols-2 gap-6">
           {state.majorCities.length > 0 && (
-            <div className="bg-gray-50 rounded-xl p-6">
+            <div className="bg-neutral-50 rounded-xl p-6">
               <h2 className="text-lg font-bold text-gray-900 mb-4">
                 Life Insurance by City in {state.name}
               </h2>
@@ -253,7 +253,7 @@ export default function StatePage({ params }: { params: { state: string } }) {
               </ul>
             </div>
           )}
-          <div className="bg-gray-50 rounded-xl p-6">
+          <div className="bg-neutral-50 rounded-xl p-6">
             <h2 className="text-lg font-bold text-gray-900 mb-4">Explore by Age</h2>
             <ul className="space-y-2 text-sm">
               {[30, 35, 40, 45, 50].map((age) => (

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { QuoteCTA } from "@/components/QuoteCTA";
 
 export const metadata: Metadata = {
   title: "Insurance Learning Center — Guides, Tips & Explainers",
@@ -99,14 +100,14 @@ export default function LearnPage() {
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Learning Center" }]} />
 
-      <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Insurance Learning Center</h1>
-      <p className="text-lg text-gray-600 mb-10">
+      <h1 className="text-4xl font-bold text-neutral-900 mb-4">Insurance Learning Center</h1>
+      <p className="text-lg text-neutral-600 mb-10">
         Expert guides to help you understand insurance, compare options, and make confident coverage decisions.
       </p>
 
       {categories.map((category) => (
         <section key={category} className="mb-12">
-          <h2 className="text-xl font-bold text-gray-900 mb-6 pb-2 border-b border-gray-200">{category}</h2>
+          <h2 className="text-xl font-bold text-neutral-900 mb-6 pb-2 border-b border-neutral-200">{category}</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {articles
               .filter((a) => a.category === category)
@@ -114,19 +115,19 @@ export default function LearnPage() {
                 <Link
                   key={article.slug}
                   href={`/learn/${article.slug}`}
-                  className="group border border-gray-200 rounded-xl p-6 hover:shadow-md hover:border-brand-300 transition-all"
+                  className="group border border-neutral-200 rounded-xl p-6 hover:shadow-md hover:border-brand-700 transition-all"
                 >
-                  <div className="flex items-center gap-2 text-xs text-gray-500 mb-3">
+                  <div className="flex items-center gap-2 text-xs text-neutral-500 mb-3">
                     <span className="bg-brand-100 text-brand-700 px-2 py-0.5 rounded-full font-medium">
                       {article.category}
                     </span>
                     <span>·</span>
                     <span>{article.readTime}</span>
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-brand-700 transition-colors mb-2">
+                  <h3 className="text-lg font-bold text-neutral-900 group-hover:text-brand-700 transition-colors mb-2">
                     {article.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{article.description}</p>
+                  <p className="text-neutral-600 text-sm leading-relaxed">{article.description}</p>
                   <p className="text-brand-700 text-sm font-medium mt-4">Read more →</p>
                 </Link>
               ))}
@@ -134,16 +135,7 @@ export default function LearnPage() {
         </section>
       ))}
 
-      <div className="bg-brand-700 rounded-2xl p-8 text-white text-center mt-8">
-        <h2 className="text-2xl font-bold mb-2">Ready to Get Coverage?</h2>
-        <p className="text-brand-100 mb-6">Compare free quotes from top-rated carriers in under 2 minutes.</p>
-        <Link
-          href="/quote"
-          className="bg-white text-brand-700 font-bold px-8 py-3 rounded-lg hover:bg-brand-50 transition-colors inline-block"
-        >
-          Get My Free Quote →
-        </Link>
-      </div>
+      <QuoteCTA />
     </div>
   );
 }

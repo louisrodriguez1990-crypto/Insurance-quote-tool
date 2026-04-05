@@ -97,7 +97,7 @@ export default function TermLifePage() {
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-brand-700 text-white">
+                <tr className="bg-brand-900 text-white">
                   <th className="text-left p-3">Age</th>
                   <th className="text-left p-3">Male</th>
                   <th className="text-left p-3">Female</th>

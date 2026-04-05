@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
 interface BreadcrumbItem {
   label: string;
@@ -7,17 +8,17 @@ interface BreadcrumbItem {
 
 export function Breadcrumb({ items }: { items: BreadcrumbItem[] }) {
   return (
-    <nav aria-label="Breadcrumb" className="text-sm text-gray-500 mb-6">
-      <ol className="flex items-center gap-2" itemScope itemType="https://schema.org/BreadcrumbList">
+    <nav aria-label="Breadcrumb" className="text-sm text-neutral-500 mb-6">
+      <ol className="flex items-center flex-wrap gap-1" itemScope itemType="https://schema.org/BreadcrumbList">
         {items.map((item, index) => (
-          <li key={index} className="flex items-center gap-2" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-            {index > 0 && <span>/</span>}
+          <li key={index} className="flex items-center gap-1" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+            {index > 0 && <ChevronRightIcon className="w-3.5 h-3.5 text-neutral-300" />}
             {item.href ? (
               <Link href={item.href} className="hover:text-brand-700 transition-colors" itemProp="item">
                 <span itemProp="name">{item.label}</span>
               </Link>
             ) : (
-              <span className="text-gray-800 font-medium" itemProp="name">{item.label}</span>
+              <span className="text-neutral-800 font-medium" itemProp="name">{item.label}</span>
             )}
             <meta itemProp="position" content={String(index + 1)} />
           </li>

@@ -141,11 +141,11 @@ export default function AgeYearOldPage({ params }: { params: { age: string } }) 
 
         {/* Key stats */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+          <div className="bg-neutral-50 border border-neutral-200 rounded-xl p-4 text-center">
             <div className="text-3xl font-extrabold text-brand-700">${ageData.avgMonthlyPremium}</div>
             <div className="text-xs text-gray-500 mt-1">Avg. monthly premium</div>
           </div>
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+          <div className="bg-neutral-50 border border-neutral-200 rounded-xl p-4 text-center">
             <div className="text-xl font-extrabold text-brand-700">$500K</div>
             <div className="text-xs text-gray-500 mt-1">Common coverage at {ageNum}</div>
           </div>
@@ -234,7 +234,7 @@ export default function AgeYearOldPage({ params }: { params: { age: string } }) 
         </section>
 
         {/* Age navigation */}
-        <div className="flex items-center justify-between bg-gray-50 rounded-xl p-6">
+        <div className="flex items-center justify-between bg-neutral-50 rounded-xl p-6">
           <div>
             {prevAge && (
               <Link href={`/insurance/life-insurance/${prevAge}-year-old`} className="text-brand-700 hover:underline text-sm">
