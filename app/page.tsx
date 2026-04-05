@@ -85,25 +85,31 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="bg-white border-b border-neutral-200 py-16 md:py-24 px-4">
+      <section className="bg-gradient-to-br from-brand-800 via-brand-900 to-brand-900 py-16 md:py-24 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 bg-neutral-100 rounded-full px-4 py-1.5 text-sm text-neutral-700 font-medium mb-6">
-              <ShieldCheckIcon className="w-4 h-4 text-cta" />
-              50,000+ families protected
+            {/* Inline Trustpilot-style rating row */}
+            <div className="flex items-center gap-2 mb-6">
+              <div className="flex gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <StarSolid key={i} className="w-4 h-4 text-yellow-400" />
+                ))}
+              </div>
+              <span className="text-sm font-semibold text-white">4.8</span>
+              <span className="text-sm text-brand-300">· 1,200+ verified reviews</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 leading-tight tracking-tight mb-5">
+            <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight tracking-tight mb-5">
               See Your Life Insurance<br className="hidden md:block" /> Rates in 60 Seconds
             </h1>
-            <p className="text-lg text-neutral-600 leading-relaxed mb-8">
+            <p className="text-lg text-brand-200 leading-relaxed mb-8">
               Compare personalized rates from A-rated carriers. No sales calls. No obligation. Just your number.
             </p>
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-              <span className="text-neutral-600"><strong className="text-neutral-900">$22/mo</strong> avg term life rate</span>
-              <span className="text-neutral-300 hidden sm:inline">|</span>
-              <span className="text-neutral-600"><strong className="text-neutral-900">A+ rated</strong> carrier partners</span>
-              <span className="text-neutral-300 hidden sm:inline">|</span>
-              <span className="text-neutral-600"><strong className="text-neutral-900">2 min</strong> to complete</span>
+              <span className="text-brand-300"><strong className="text-white">$22/mo</strong> avg term life rate</span>
+              <span className="text-brand-700 hidden sm:inline">|</span>
+              <span className="text-brand-300"><strong className="text-white">A+ rated</strong> carrier partners</span>
+              <span className="text-brand-700 hidden sm:inline">|</span>
+              <span className="text-brand-300"><strong className="text-white">2 min</strong> to complete</span>
             </div>
           </div>
           <HeroCoverageSelector />
@@ -111,7 +117,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Proof Bar ── */}
-      <section className="bg-brand-900 py-5 px-4">
+      <section className="bg-brand-800 py-5 px-4">
         <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-x-10 gap-y-3">
           {[
             { Icon: UsersIcon,       label: <><strong className="text-white">50,000+</strong> <span className="text-brand-200">families protected</span></> },
