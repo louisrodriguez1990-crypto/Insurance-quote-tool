@@ -111,16 +111,16 @@ export default function HomePage() {
       </section>
 
       {/* ── Proof Bar ── */}
-      <section className="bg-neutral-50 border-b border-neutral-200 py-5 px-4">
+      <section className="bg-brand-900 py-5 px-4">
         <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-x-10 gap-y-3">
           {[
-            { Icon: UsersIcon,       label: <><strong className="text-neutral-900">50,000+</strong> families protected</> },
-            { Icon: StarIcon,        label: <><strong className="text-neutral-900">4.8 / 5</strong> average advisor rating</> },
-            { Icon: ShieldCheckIcon, label: <><strong className="text-neutral-900">A+ rated</strong> carrier partners only</> },
-            { Icon: LockClosedIcon,  label: <><strong className="text-neutral-900">SSL encrypted</strong> · no spam · no obligation</> },
+            { Icon: UsersIcon,       label: <><strong className="text-white">50,000+</strong> <span className="text-brand-200">families protected</span></> },
+            { Icon: StarIcon,        label: <><strong className="text-white">4.8 / 5</strong> <span className="text-brand-200">average advisor rating</span></> },
+            { Icon: ShieldCheckIcon, label: <><strong className="text-white">A+ rated</strong> <span className="text-brand-200">carrier partners only</span></> },
+            { Icon: LockClosedIcon,  label: <><strong className="text-white">SSL encrypted</strong> <span className="text-brand-200">· no spam · no obligation</span></> },
           ].map(({ Icon, label }, i) => (
-            <div key={i} className="flex items-center gap-2 text-sm text-neutral-600">
-              <Icon className="w-4 h-4 text-neutral-400 flex-shrink-0" />
+            <div key={i} className="flex items-center gap-2 text-sm text-brand-200">
+              <Icon className="w-4 h-4 text-brand-200 flex-shrink-0" />
               <span>{label}</span>
             </div>
           ))}
@@ -128,7 +128,7 @@ export default function HomePage() {
       </section>
 
       {/* ── How It Works ── */}
-      <section className="py-16 md:py-20 px-4 bg-white">
+      <section className="py-16 md:py-20 px-4 bg-brand-50">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-neutral-900 mb-3">How It Works</h2>
@@ -201,11 +201,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Why InsureQuote ── */}
-      <section className="py-16 md:py-20 px-4 bg-white">
+      {/* ── Why BestQuote ── */}
+      <section className="py-16 md:py-20 px-4 bg-brand-900 text-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold text-neutral-900 mb-8">Why Families Choose InsureQuote</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">Why Families Choose BestQuote</h2>
             <div className="space-y-6">
               {[
                 { Icon: LockClosedIcon,  title: "Your Privacy is Protected",  desc: "Your information is encrypted and never sold to third parties. We use it only to generate your rates." },
@@ -214,27 +214,27 @@ export default function HomePage() {
                 { Icon: CheckIcon,       title: "No Obligation, Ever",        desc: "See your rates in 60 seconds. No commitment, no credit card, no spam. Just your number." },
               ].map(({ Icon, title, desc }) => (
                 <div key={title} className="flex gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-brand-50 flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-brand-700" />
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+                    <Icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900 mb-1">{title}</h3>
-                    <p className="text-neutral-600 text-sm leading-relaxed">{desc}</p>
+                    <h3 className="font-semibold text-white mb-1">{title}</h3>
+                    <p className="text-brand-200 text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="bg-neutral-50 rounded-2xl border border-neutral-200 p-8">
-            <p className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-5">Our Carrier Partners</p>
+          <div className="bg-brand-800 rounded-2xl border border-brand-700 p-8">
+            <p className="text-xs font-semibold text-brand-200 uppercase tracking-wider mb-5">Our Carrier Partners</p>
             <div className="grid grid-cols-2 gap-3">
               {["Nationwide", "Prudential", "MetLife", "AIG", "Pacific Life", "Banner Life", "Protective", "Lincoln"].map((name) => (
-                <div key={name} className="bg-white border border-neutral-200 rounded-lg px-4 py-3 text-sm font-medium text-neutral-700 text-center">
+                <div key={name} className="bg-brand-700 border border-brand-600 rounded-lg px-4 py-3 text-sm font-medium text-white text-center">
                   {name}
                 </div>
               ))}
             </div>
-            <p className="text-xs text-neutral-500 mt-4">All carriers rated A or better by AM Best</p>
+            <p className="text-xs text-brand-300 mt-4">All carriers rated A or better by AM Best</p>
           </div>
         </div>
       </section>
@@ -255,7 +255,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { name: "Michael T.", location: "Austin, TX",    coverage: "Term Life · $750K", quote: "I was dreading the process but it took less than 5 minutes. Got a $750K policy for $31/month — way less than I expected." },
-              { name: "Sarah L.",   location: "Orlando, FL",   coverage: "Term Life · $500K", quote: "As a new mom I needed coverage fast. InsureQuote showed me options from three carriers side by side. Clear, simple, no pressure." },
+              { name: "Sarah L.",   location: "Orlando, FL",   coverage: "Term Life · $500K", quote: "As a new mom I needed coverage fast. BestQuote showed me options from three carriers side by side. Clear, simple, no pressure." },
               { name: "David K.",   location: "Chicago, IL",   coverage: "Whole Life · $250K", quote: "My advisor walked me through the difference between term and whole life. Ended up with the right policy at a price I'm comfortable with." },
             ].map(({ name, location, coverage, quote }) => (
               <div key={name} className="bg-white rounded-2xl border border-neutral-200 p-6 shadow-sm">

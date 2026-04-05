@@ -31,7 +31,7 @@ export async function generateMetadata({
     description: `Average life insurance rate for a ${ageNum}-year-old: $${premium}/month. Compare term and whole life quotes, coverage recommendations, and tips for getting the best rate at ${ageNum}.`,
     alternates: { canonical: `/insurance/life-insurance/${ageNum}-year-old` },
     openGraph: {
-      title: `Life Insurance at ${ageNum} — InsureQuote`,
+      title: `Life Insurance at ${ageNum} — BestQuote`,
       description: `Average rate: $${premium}/month. Get a free personalized quote for a ${ageNum}-year-old.`,
     },
   };
@@ -99,8 +99,8 @@ export default function AgeYearOldPage({ params }: { params: { age: string } }) 
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://insurequote.com" },
-      { "@type": "ListItem", position: 2, name: "Life Insurance", item: "https://insurequote.com/insurance/life-insurance" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://bestquote.io" },
+      { "@type": "ListItem", position: 2, name: "Life Insurance", item: "https://bestquote.io/insurance/life-insurance" },
       { "@type": "ListItem", position: 3, name: `Life Insurance for ${ageNum}-Year-Olds` },
     ],
   };

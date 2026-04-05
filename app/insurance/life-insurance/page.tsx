@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Everything you need to know about life insurance. Compare term vs whole life, calculate how much coverage you need, and get free quotes from top-rated carriers.",
   alternates: { canonical: "/insurance/life-insurance" },
   openGraph: {
-    title: "Life Insurance Guide — InsureQuote",
+    title: "Life Insurance Guide — BestQuote",
     description: "Compare term vs whole life insurance, calculate coverage needs, and get free quotes.",
   },
 };
@@ -19,7 +19,7 @@ const articleSchema = {
   "@type": "Article",
   headline: "Life Insurance: The Complete Guide to Protecting Your Family",
   description: "Everything you need to know about life insurance in 2024.",
-  publisher: { "@type": "Organization", name: "InsureQuote" },
+  publisher: { "@type": "Organization", name: "BestQuote" },
 };
 
 const faqSchema = {
@@ -73,8 +73,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://insurequote.com" },
-    { "@type": "ListItem", position: 2, name: "Insurance", item: "https://insurequote.com/insurance" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://bestquote.io" },
+    { "@type": "ListItem", position: 2, name: "Insurance", item: "https://bestquote.io/insurance" },
     { "@type": "ListItem", position: 3, name: "Life Insurance" },
   ],
 };
@@ -93,7 +93,7 @@ export default function LifeInsurancePage() {
           Life Insurance: The Complete Guide to Protecting Your Family
         </h1>
         <p className="text-lg text-gray-600 mb-8">
-          Updated April 2024 · 12 min read · By InsureQuote Editorial Team
+          Updated April 2024 · 12 min read · By BestQuote Editorial Team
         </p>
 
         {/* Table of Contents */}

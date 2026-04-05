@@ -2,7 +2,7 @@ import statesData from "@/data/states.json";
 import fs from "fs";
 import path from "path";
 
-const BASE_URL = "https://insurequote.com";
+const BASE_URL = "https://bestquote.io";
 
 const staticPages = [
   { url: "/", priority: "1.0", changefreq: "weekly" },

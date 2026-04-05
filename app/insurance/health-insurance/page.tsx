@@ -53,8 +53,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://insurequote.com" },
-    { "@type": "ListItem", position: 2, name: "Insurance", item: "https://insurequote.com/insurance" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://bestquote.io" },
+    { "@type": "ListItem", position: 2, name: "Insurance", item: "https://bestquote.io/insurance" },
     { "@type": "ListItem", position: 3, name: "Health Insurance" },
   ],
 };
@@ -75,7 +75,7 @@ export default function HealthInsurancePage() {
 
         <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Health Insurance: Plans, Costs & How to Get Covered</h1>
         <p className="text-lg text-gray-600 mb-8">
-          Updated April 2024 · InsureQuote Editorial Team
+          Updated April 2024 · BestQuote Editorial Team
         </p>
 
         <section className="mb-10">

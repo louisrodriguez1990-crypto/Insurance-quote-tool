@@ -86,15 +86,15 @@ export default function LearnArticlePage({ params }: { params: { slug: string } 
     datePublished: frontmatter.publishedAt,
     dateModified: frontmatter.updatedAt,
     author: { "@type": "Organization", name: frontmatter.author },
-    publisher: { "@type": "Organization", name: "InsureQuote" },
+    publisher: { "@type": "Organization", name: "BestQuote" },
   };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://insurequote.com" },
-      { "@type": "ListItem", position: 2, name: "Learning Center", item: "https://insurequote.com/learn" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://bestquote.io" },
+      { "@type": "ListItem", position: 2, name: "Learning Center", item: "https://bestquote.io/learn" },
       { "@type": "ListItem", position: 3, name: frontmatter.title },
     ],
   };

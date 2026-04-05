@@ -53,8 +53,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://insurequote.com" },
-    { "@type": "ListItem", position: 2, name: "Life Insurance", item: "https://insurequote.com/insurance/life-insurance" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://bestquote.io" },
+    { "@type": "ListItem", position: 2, name: "Life Insurance", item: "https://bestquote.io/insurance/life-insurance" },
     { "@type": "ListItem", position: 3, name: "Term Life Insurance" },
   ],
 };

@@ -4,16 +4,16 @@ import Link from "next/link";
 import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://insurequote.com"),
+  metadataBase: new URL("https://bestquote.io"),
   title: {
-    default: "InsureQuote — See Your Insurance Rates in 60 Seconds",
-    template: "%s | InsureQuote",
+    default: "BestQuote — See Your Insurance Rates in 60 Seconds",
+    template: "%s | BestQuote",
   },
   description:
     "Compare personalized insurance rates instantly. Life, health, auto, and home — A-rated carriers, no sales calls, no obligation.",
   openGraph: {
     type: "website",
-    siteName: "InsureQuote",
+    siteName: "BestQuote",
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true },
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
 const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "InsureQuote",
-  url: "https://insurequote.com",
+  name: "BestQuote",
+  url: "https://bestquote.io",
   description: "Licensed insurance marketplace for free rate comparison",
   sameAs: [],
 };
@@ -31,11 +31,11 @@ const orgSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "InsureQuote",
-  url: "https://insurequote.com",
+  name: "BestQuote",
+  url: "https://bestquote.io",
   potentialAction: {
     "@type": "SearchAction",
-    target: { "@type": "EntryPoint", urlTemplate: "https://insurequote.com/learn?q={search_term_string}" },
+    target: { "@type": "EntryPoint", urlTemplate: "https://bestquote.io/learn?q={search_term_string}" },
     "query-input": "required name=search_term_string",
   },
 };
@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="bg-neutral-900 text-neutral-400 mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-2 md:grid-cols-5 gap-8">
             <div className="col-span-2 md:col-span-1">
-              <h3 className="text-white font-semibold mb-4">InsureQuote</h3>
+              <h3 className="text-white font-semibold mb-4">BestQuote</h3>
               <p className="text-sm leading-relaxed">
                 Compare rates from A-rated carriers. Free, no obligation, no sales calls.
               </p>
@@ -98,7 +98,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
           <div className="border-t border-neutral-800 text-center py-4 text-xs">
-            © {new Date().getFullYear()} InsureQuote. Licensed insurance marketplace. Rates shown are estimates only.
+            © {new Date().getFullYear()} BestQuote. Licensed insurance marketplace. Rates shown are estimates only.
           </div>
         </footer>
       </body>

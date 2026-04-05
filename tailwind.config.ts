@@ -16,6 +16,7 @@ const config: Config = {
           50:  "#f0f4ff",
           100: "#dce6fb",
           200: "#b9cdf7",
+          300: "#8aadf4",
           500: "#3b5fc0",
           600: "#1e40af",
           700: "#1e3a8a",

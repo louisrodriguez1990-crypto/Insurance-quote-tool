@@ -12,10 +12,10 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link
           href="/"
-          className="text-xl font-bold text-brand-900"
+          className="text-xl font-bold text-brand-900 tracking-tight"
           onClick={() => setMobileOpen(false)}
         >
-          InsureQuote
+          bestquote<span className="text-cta">.io</span>
         </Link>
 
         {/* Desktop nav */}
