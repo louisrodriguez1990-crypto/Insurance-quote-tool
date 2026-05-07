@@ -1,0 +1,55 @@
+{
+  "name": "Louis Rodriguez",
+  "npn": "21068608",
+  "residentState": "FL",
+  "licensedStates": ["FL", "TX", "CA", "NC", "SC"],
+  "licenses": {
+    "FL": {
+      "name": "RODRIGUEZ, LOUIS JR",
+      "licenseNumber": "G090684",
+      "status": "Valid",
+      "authority": "LIFE INCL VAR ANNUITY & HEALTH (0215)",
+      "effectiveDate": "2024-02-06",
+      "registryDetailUrl": "https://licenseesearch.fldfs.com/Licensee/2477940"
+    },
+    "TX": {
+      "name": "Rodriguez, Louis JR",
+      "licenseNumber": "3365093",
+      "status": "Active",
+      "authority": "Insurance Producer",
+      "registryDetailUrl": "https://www.sircon.com/ComplianceExpress/Inquiry/consumerInquiry.do?nonSscrb=Y"
+    },
+    "CA": {
+      "name": "Louis Rodriguez",
+      "licenseNumber": null,
+      "status": "Unverified in public lookup",
+      "authority": "Pending manual verification",
+      "registryDetailUrl": "https://cdicloud.insurance.ca.gov/cal/IndividualNameSearch"
+    },
+    "NC": {
+      "name": "RODRIGUEZ, LOUIS JR",
+      "licenseNumber": "21068608",
+      "status": "Insurance Producer-Active",
+      "authority": "Insurance Producer",
+      "effectiveDate": "2026-04-01",
+      "expirationDate": "2028-03-31",
+      "registryDetailUrl": "https://external-lookup-web.prod.naic.org/"
+    },
+    "SC": {
+      "name": "RODRIGUEZ, LOUIS",
+      "licenseNumber": "21068608",
+      "status": "Insurance Producer-Active",
+      "authority": "Insurance Producer",
+      "effectiveDate": "2024-04-23",
+      "expirationDate": "2026-09-30",
+      "registryDetailUrl": "https://external-lookup-web.prod.naic.org/"
+    }
+  },
+  "registries": {
+    "FL": "https://licenseesearch.fldfs.com/",
+    "TX": "https://agate.tdi.state.tx.us/agent/agent-lookup.html",
+    "CA": "https://cdicloud.insurance.ca.gov/cal/",
+    "NC": "https://external-lookup-web.prod.naic.org/",
+    "SC": "https://www.statebasedsystems.com/solar/index.html"
+  }
+}

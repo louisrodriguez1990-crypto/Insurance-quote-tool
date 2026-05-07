@@ -30,10 +30,10 @@ export function Header() {
             Learn
           </Link>
           <Link
-            href="/quote"
+            href="/"
             className="bg-cta text-white px-4 py-2 rounded-lg hover:bg-cta-hover transition-colors font-semibold"
           >
-            See My Rates
+            Start Workflow
           </Link>
         </div>
 
@@ -76,11 +76,11 @@ export function Header() {
             Learn
           </Link>
           <Link
-            href="/quote"
+            href="/"
             className="block w-full text-center bg-cta text-white font-semibold px-4 py-3 rounded-lg hover:bg-cta-hover transition-colors"
             onClick={() => setMobileOpen(false)}
           >
-            See My Rates
+            Start Workflow
           </Link>
         </div>
       )}

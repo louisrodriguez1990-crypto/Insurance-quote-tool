@@ -1,0 +1,99 @@
+{
+  "states": [
+    {
+      "abbr": "FL",
+      "slug": "florida",
+      "name": "Florida",
+      "defaultCity": "Orlando",
+      "funeralCostAvg": 8200,
+      "cremationCostAvg": 4300,
+      "medianIncome": 57703,
+      "avgMortgageBalance": 285000,
+      "incomeMultiplier": 10,
+      "mortgageProtectionBuffer": 1.05,
+      "localFriction": "Florida probate can delay estate liquidity, so final-expense coverage should be immediately available to beneficiaries.",
+      "registryUrl": "https://licenseesearch.fldfs.com/",
+      "source": { "name": "Local funeral/cremation dataset", "url": "/data/life-insurance-matrix.json" }
+    },
+    {
+      "abbr": "TX",
+      "slug": "texas",
+      "name": "Texas",
+      "defaultCity": "Austin",
+      "funeralCostAvg": 7900,
+      "cremationCostAvg": 3900,
+      "medianIncome": 63826,
+      "avgMortgageBalance": 255000,
+      "incomeMultiplier": 10,
+      "mortgageProtectionBuffer": 1.04,
+      "localFriction": "Texas homestead protections help families keep a residence, but a mortgage payoff still requires liquid cash or insurance proceeds.",
+      "registryUrl": "https://www.tdi.texas.gov/consumer/company-profiles-and-agents-for-service-of-process.html",
+      "source": { "name": "Local funeral/cremation dataset", "url": "/data/life-insurance-matrix.json" }
+    },
+    {
+      "abbr": "CA",
+      "slug": "california",
+      "name": "California",
+      "defaultCity": "Los Angeles",
+      "funeralCostAvg": 10500,
+      "cremationCostAvg": 5200,
+      "medianIncome": 78672,
+      "avgMortgageBalance": 515000,
+      "incomeMultiplier": 10,
+      "mortgageProtectionBuffer": 1.08,
+      "localFriction": "California housing costs and estate administration timelines can make underfunded coverage especially painful for surviving family members.",
+      "registryUrl": "https://cdicloud.insurance.ca.gov/cal/",
+      "source": { "name": "Local funeral/cremation dataset", "url": "/data/life-insurance-matrix.json" }
+    },
+    {
+      "abbr": "NC",
+      "slug": "north-carolina",
+      "name": "North Carolina",
+      "defaultCity": "Charlotte",
+      "funeralCostAvg": 7600,
+      "cremationCostAvg": 3600,
+      "medianIncome": 57341,
+      "avgMortgageBalance": 245000,
+      "incomeMultiplier": 10,
+      "mortgageProtectionBuffer": 1.04,
+      "localFriction": "North Carolina families often balance fast-growing metro housing costs with estate settlement expenses that are easier to handle with direct beneficiary proceeds.",
+      "registryUrl": "https://external-lookup-web.prod.naic.org/",
+      "source": { "name": "Local funeral/cremation dataset", "url": "/data/life-insurance-matrix.json" }
+    },
+    {
+      "abbr": "SC",
+      "slug": "south-carolina",
+      "name": "South Carolina",
+      "defaultCity": "Charleston",
+      "funeralCostAvg": 7400,
+      "cremationCostAvg": 3500,
+      "medianIncome": 54864,
+      "avgMortgageBalance": 235000,
+      "incomeMultiplier": 10,
+      "mortgageProtectionBuffer": 1.04,
+      "localFriction": "South Carolina probate and final-arrangement costs can land on family before estate assets are easy to access.",
+      "registryUrl": "https://www.statebasedsystems.com/solar/index.html",
+      "source": { "name": "Local funeral/cremation dataset", "url": "/data/life-insurance-matrix.json" }
+    }
+  ],
+  "intents": {
+    "sba-loan": {
+      "label": "SBA Loan",
+      "productType": "Term Life",
+      "baseNeed": "loan_balance",
+      "defaultCoverage": 500000
+    },
+    "mortgage": {
+      "label": "Mortgage",
+      "productType": "Term Life",
+      "baseNeed": "mortgage_balance",
+      "defaultCoverage": 300000
+    },
+    "final-expense": {
+      "label": "Final Expense",
+      "productType": "Final Expense",
+      "baseNeed": "funeral_plus_cash_buffer",
+      "defaultCoverage": 15000
+    }
+  }
+}

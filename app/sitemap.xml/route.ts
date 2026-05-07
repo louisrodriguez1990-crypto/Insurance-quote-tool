@@ -1,4 +1,5 @@
 import statesData from "@/data/states.json";
+import { getIntentPath, launchStates, type IntentKey } from "@/lib/lifeInsurance";
 import fs from "fs";
 import path from "path";
 
@@ -6,7 +7,6 @@ const BASE_URL = "https://bestquote.io";
 
 const staticPages = [
   { url: "/", priority: "1.0", changefreq: "weekly" },
-  { url: "/quote", priority: "0.9", changefreq: "monthly" },
   { url: "/learn", priority: "0.8", changefreq: "weekly" },
   { url: "/insurance/life-insurance", priority: "0.9", changefreq: "weekly" },
   { url: "/insurance/life-insurance/term-life-insurance", priority: "0.8", changefreq: "weekly" },
@@ -47,6 +47,19 @@ export async function GET() {
     .map((age) => generateUrlEntry(`/insurance/life-insurance/${age}-year-old`, "0.6", "monthly", today))
     .join("");
 
+  const pseoEntries = (["sba-loan", "final-expense", "mortgage"] as IntentKey[])
+    .flatMap((intent) =>
+      launchStates.map((state) =>
+        generateUrlEntry(
+          getIntentPath(intent, state),
+          intent === "mortgage" ? "0.8" : "0.9",
+          "monthly",
+          today,
+        ),
+      ),
+    )
+    .join("");
+
   const learnEntries = getLearnArticles()
     .map((slug) => generateUrlEntry(`/learn/${slug}`, "0.7", "weekly", today))
     .join("");
@@ -56,6 +69,7 @@ export async function GET() {
   ${staticEntries}
   ${stateEntries}
   ${ageEntries}
+  ${pseoEntries}
   ${learnEntries}
 </urlset>`;
 
