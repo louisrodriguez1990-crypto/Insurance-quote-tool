@@ -34,6 +34,7 @@ export async function generateMetadata({
       title: `Life Insurance at ${ageNum} — BestQuote`,
       description: `Average rate: $${premium}/month. Get a free personalized quote for a ${ageNum}-year-old.`,
     },
+    robots: { index: false, follow: true },
   };
 }
 

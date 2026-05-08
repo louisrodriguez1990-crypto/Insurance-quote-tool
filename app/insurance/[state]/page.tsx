@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import statesData from "@/data/states.json";
+import { getIntentPath, launchStates } from "@/lib/lifeInsurance";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { QuoteCTA } from "@/components/QuoteCTA";
 
@@ -30,6 +31,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const state = statesData.find((s) => s.slug === params.state) as StateData | undefined;
   if (!state) return {};
+  const isLaunchState = launchStates.some((s) => s.slug === params.state);
   return {
     title: `Life Insurance in ${state.name} — Compare Rates & Regulations`,
     description: `Find the best life insurance rates in ${state.name}. Average term life premium: $${state.avgTermLifePremium}/month. Compare quotes from top-rated carriers licensed in ${state.abbr}.`,
@@ -38,6 +40,7 @@ export async function generateMetadata({
       title: `Life Insurance in ${state.name} — BestQuote`,
       description: `Average term life premium in ${state.name}: $${state.avgTermLifePremium}/month. Get your free quote.`,
     },
+    ...(!isLaunchState && { robots: { index: false, follow: true } }),
   };
 }
 
@@ -269,6 +272,49 @@ export default function StatePage({ params }: { params: { state: string } }) {
             </ul>
           </div>
         </section>
+
+        {launchStates.some((s) => s.slug === state.slug) && (() => {
+          const matrixState = launchStates.find((s) => s.slug === state.slug)!;
+          return (
+            <section className="mt-8">
+              <h2 className="text-xl font-bold text-gray-900 mb-2">
+                {state.name} coverage calculators
+              </h2>
+              <p className="text-gray-600 mb-5 text-sm">
+                State-specific estimates for the three most common life insurance needs in {state.name}.
+              </p>
+              <div className="grid md:grid-cols-3 gap-4">
+                <Link
+                  href={getIntentPath("sba-loan", matrixState)}
+                  className="group border border-neutral-200 rounded-xl p-5 hover:border-brand-700 hover:shadow-sm transition-all"
+                >
+                  <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-1">SBA Loan</p>
+                  <h3 className="font-bold text-neutral-900 group-hover:text-brand-700 mb-1">SBA Loan Protection</h3>
+                  <p className="text-xs text-neutral-600">Collateral assignment sizing for {state.name} SBA loans.</p>
+                  <p className="text-brand-700 text-sm font-medium mt-3">Open calculator →</p>
+                </Link>
+                <Link
+                  href={getIntentPath("mortgage", matrixState)}
+                  className="group border border-neutral-200 rounded-xl p-5 hover:border-brand-700 hover:shadow-sm transition-all"
+                >
+                  <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-1">Mortgage</p>
+                  <h3 className="font-bold text-neutral-900 group-hover:text-brand-700 mb-1">Mortgage Protection</h3>
+                  <p className="text-xs text-neutral-600">Term coverage sized to {state.name} mortgage balances.</p>
+                  <p className="text-brand-700 text-sm font-medium mt-3">Open calculator →</p>
+                </Link>
+                <Link
+                  href={getIntentPath("final-expense", matrixState)}
+                  className="group border border-neutral-200 rounded-xl p-5 hover:border-brand-700 hover:shadow-sm transition-all"
+                >
+                  <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-1">Final Expense</p>
+                  <h3 className="font-bold text-neutral-900 group-hover:text-brand-700 mb-1">Guaranteed Issue Final Expense</h3>
+                  <p className="text-xs text-neutral-600">No-exam coverage using {state.name} funeral cost data.</p>
+                  <p className="text-brand-700 text-sm font-medium mt-3">Open calculator →</p>
+                </Link>
+              </div>
+            </section>
+          );
+        })()}
       </div>
     </>
   );

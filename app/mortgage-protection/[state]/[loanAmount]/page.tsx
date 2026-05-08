@@ -19,10 +19,13 @@ export async function generateMetadata({
   if (!state) return {};
   const loanAmount = Number(params.loanAmount);
 
+  const isCanonical = loanAmount === state.avgMortgageBalance;
+
   return {
     title: `Mortgage Protection in ${state.name} for $${loanAmount.toLocaleString()} Loans`,
     description: `Calculate mortgage protection life insurance in ${state.name} for a $${loanAmount.toLocaleString()} mortgage using local cost assumptions.`,
-    alternates: { canonical: `/mortgage-protection/${state.slug}/${params.loanAmount}` },
+    alternates: { canonical: `/mortgage-protection/${state.slug}/${state.avgMortgageBalance}` },
+    ...(!isCanonical && { robots: { index: false, follow: true } }),
   };
 }
 
