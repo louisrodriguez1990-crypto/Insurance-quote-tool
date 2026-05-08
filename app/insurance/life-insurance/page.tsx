@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getIntentPath, launchStates } from "@/lib/lifeInsurance";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { QuoteCTA } from "@/components/QuoteCTA";
 
@@ -317,6 +318,56 @@ export default function LifeInsurancePage() {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-2">*Sample rates for illustrative purposes. Actual rates vary by carrier and individual underwriting.</p>
+        </section>
+
+        {/* Coverage for specific needs */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Coverage for specific needs</h2>
+          <p className="text-gray-600 mb-6">State-specific calculators for common coverage scenarios.</p>
+          <div className="grid md:grid-cols-3 gap-5">
+            <div className="border border-neutral-200 rounded-xl p-6">
+              <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-2">SBA Loan Protection</p>
+              <h3 className="text-lg font-bold text-neutral-900 mb-2">SBA Loan Life Insurance</h3>
+              <p className="text-sm text-neutral-600 mb-4">Calculate the collateral assignment coverage your SBA lender requires using local income and loan data.</p>
+              <ul className="space-y-1">
+                {launchStates.map((s) => (
+                  <li key={s.slug}>
+                    <Link href={getIntentPath("sba-loan", s)} className="text-brand-700 text-sm hover:underline">
+                      {s.name} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="border border-neutral-200 rounded-xl p-6">
+              <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-2">Mortgage Protection</p>
+              <h3 className="text-lg font-bold text-neutral-900 mb-2">Mortgage Protection Insurance</h3>
+              <p className="text-sm text-neutral-600 mb-4">Size an independent term policy against your mortgage balance — and understand why it beats lender-sold products.</p>
+              <ul className="space-y-1">
+                {launchStates.map((s) => (
+                  <li key={s.slug}>
+                    <Link href={getIntentPath("mortgage", s)} className="text-brand-700 text-sm hover:underline">
+                      {s.name} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="border border-neutral-200 rounded-xl p-6">
+              <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-2">Final Expense</p>
+              <h3 className="text-lg font-bold text-neutral-900 mb-2">Guaranteed Issue Final Expense</h3>
+              <p className="text-sm text-neutral-600 mb-4">No health questions. Estimate guaranteed-issue whole life coverage using local funeral and cremation costs.</p>
+              <ul className="space-y-1">
+                {launchStates.map((s) => (
+                  <li key={s.slug}>
+                    <Link href={getIntentPath("final-expense", s)} className="text-brand-700 text-sm hover:underline">
+                      {s.name} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </section>
 
         <QuoteCTA />

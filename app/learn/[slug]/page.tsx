@@ -4,6 +4,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { getIntentPath, launchStates } from "@/lib/lifeInsurance";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { QuoteCTA } from "@/components/QuoteCTA";
 
@@ -134,6 +135,52 @@ export default function LearnArticlePage({ params }: { params: { slug: string } 
           className="prose prose-gray max-w-none"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+
+        <div className="my-12 border border-neutral-200 rounded-xl p-6">
+          <h2 className="text-lg font-bold text-neutral-900 mb-1">Helpful calculators</h2>
+          <p className="text-sm text-neutral-600 mb-5">State-specific estimates for common life insurance scenarios.</p>
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="border border-neutral-200 rounded-xl p-4">
+              <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-1">SBA Loan</p>
+              <p className="font-semibold text-neutral-900 text-sm mb-2">SBA Loan Protection</p>
+              <ul className="space-y-1">
+                {launchStates.map((s) => (
+                  <li key={s.slug}>
+                    <Link href={getIntentPath("sba-loan", s)} className="text-brand-700 text-xs hover:underline">
+                      {s.name} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="border border-neutral-200 rounded-xl p-4">
+              <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-1">Mortgage</p>
+              <p className="font-semibold text-neutral-900 text-sm mb-2">Mortgage Protection</p>
+              <ul className="space-y-1">
+                {launchStates.map((s) => (
+                  <li key={s.slug}>
+                    <Link href={getIntentPath("mortgage", s)} className="text-brand-700 text-xs hover:underline">
+                      {s.name} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="border border-neutral-200 rounded-xl p-4">
+              <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-1">Final Expense</p>
+              <p className="font-semibold text-neutral-900 text-sm mb-2">Guaranteed Issue Final Expense</p>
+              <ul className="space-y-1">
+                {launchStates.map((s) => (
+                  <li key={s.slug}>
+                    <Link href={getIntentPath("final-expense", s)} className="text-brand-700 text-xs hover:underline">
+                      {s.name} →
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
 
         <div className="my-12">
           <QuoteCTA />

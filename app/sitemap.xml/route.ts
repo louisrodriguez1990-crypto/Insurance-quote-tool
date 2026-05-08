@@ -1,6 +1,6 @@
-import statesData from "@/data/states.json";
 import { getIntentPath, launchStates, type IntentKey } from "@/lib/lifeInsurance";
 import fs from "fs";
+import matter from "gray-matter";
 import path from "path";
 
 const BASE_URL = "https://bestquote.io";
@@ -14,12 +14,20 @@ const staticPages = [
   { url: "/insurance/health-insurance", priority: "0.9", changefreq: "weekly" },
 ];
 
-function getLearnArticles(): string[] {
+function getLearnArticles(): { slug: string; lastmod: string }[] {
   const learnDir = path.join(process.cwd(), "content", "learn");
   if (!fs.existsSync(learnDir)) return [];
-  return fs.readdirSync(learnDir)
+  return fs
+    .readdirSync(learnDir)
     .filter((f) => f.endsWith(".mdx"))
-    .map((f) => f.replace(".mdx", ""));
+    .map((f) => {
+      const raw = fs.readFileSync(path.join(learnDir, f), "utf8");
+      const { data } = matter(raw);
+      return {
+        slug: f.replace(".mdx", ""),
+        lastmod: (data.updatedAt as string) || new Date().toISOString().split("T")[0],
+      };
+    });
 }
 
 function generateUrlEntry(url: string, priority: string, changefreq: string, lastmod?: string): string {
@@ -39,14 +47,14 @@ export async function GET() {
     .map((p) => generateUrlEntry(p.url, p.priority, p.changefreq, today))
     .join("");
 
-  const stateEntries = statesData
+  // Only launchStates (FL/TX/CA/NC/SC) have rich local matrix data worth indexing
+  const stateEntries = launchStates
     .map((s) => generateUrlEntry(`/insurance/${s.slug}`, "0.7", "monthly", today))
     .join("");
 
-  const ageEntries = Array.from({ length: 51 }, (_, i) => i + 20)
-    .map((age) => generateUrlEntry(`/insurance/life-insurance/${age}-year-old`, "0.6", "monthly", today))
-    .join("");
+  // Age pages are noindexed — omit from sitemap
 
+  // getIntentPath("mortgage", state) uses state.avgMortgageBalance — canonical URL only
   const pseoEntries = (["sba-loan", "final-expense", "mortgage"] as IntentKey[])
     .flatMap((intent) =>
       launchStates.map((state) =>
@@ -60,15 +68,15 @@ export async function GET() {
     )
     .join("");
 
+  // Use updatedAt from frontmatter for honest lastmod
   const learnEntries = getLearnArticles()
-    .map((slug) => generateUrlEntry(`/learn/${slug}`, "0.7", "weekly", today))
+    .map(({ slug, lastmod }) => generateUrlEntry(`/learn/${slug}`, "0.7", "weekly", lastmod))
     .join("");
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${staticEntries}
   ${stateEntries}
-  ${ageEntries}
   ${pseoEntries}
   ${learnEntries}
 </urlset>`;
