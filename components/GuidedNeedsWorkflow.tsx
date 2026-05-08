@@ -147,12 +147,12 @@ export function GuidedNeedsWorkflow({
   return (
     <section className="bg-white border border-neutral-200 rounded-xl shadow-sm overflow-hidden">
       <div className="p-5 md:p-7 border-b border-neutral-200">
-        <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-3">One guided workflow</p>
+        <p className="text-xs font-bold uppercase tracking-wider text-brand-700 mb-3">Free coverage estimate</p>
         <h1 className="text-3xl md:text-4xl font-extrabold text-neutral-900">
-          Find your likely coverage range{selectedStateLabel}
+          See your coverage range{selectedStateLabel}
         </h1>
         <p className="text-neutral-600 mt-3 max-w-3xl">
-          Answer the same core questions a licensed agent would ask. You will get an estimated coverage and monthly premium range before scheduling.
+          4 questions to personalize your estimate. No contact info required.
         </p>
         <div className="mt-6">
           <div className="flex items-center justify-between text-xs font-semibold text-neutral-500 mb-2">
@@ -168,8 +168,8 @@ export function GuidedNeedsWorkflow({
       <div className="p-5 md:p-7">
         {step === 0 && (
           <div>
-            <h2 className="text-xl font-bold text-neutral-900">What situation are we solving for?</h2>
-            <p className="text-sm text-neutral-600 mt-1">This determines which underwriting and coverage questions matter.</p>
+            <h2 className="text-xl font-bold text-neutral-900">What are you trying to protect?</h2>
+            <p className="text-sm text-neutral-600 mt-1">We'll focus only on what's relevant to your goal.</p>
             <div className="grid gap-3 mt-5">
               {intentOptions.map((option) => (
                 <button
@@ -199,7 +199,7 @@ export function GuidedNeedsWorkflow({
 
         {step === 1 && (
           <div>
-            <h2 className="text-xl font-bold text-neutral-900">What should the range assume about you?</h2>
+            <h2 className="text-xl font-bold text-neutral-900">Personalize your estimate</h2>
             <div className="grid md:grid-cols-2 gap-5 mt-5">
               <label>
                 <span className="text-sm font-semibold text-neutral-700">State</span>
@@ -285,9 +285,9 @@ export function GuidedNeedsWorkflow({
 
         {step === 2 && (
           <div>
-            <h2 className="text-xl font-bold text-neutral-900">How much risk should the policy cover?</h2>
+            <h2 className="text-xl font-bold text-neutral-900">How much coverage are we sizing?</h2>
             <p className="text-sm text-neutral-600 mt-1">
-              The workflow uses local {activeState.name} data, then subtracts any savings you want to earmark.
+              We start with local {activeState.name} averages. Adjust to match your actual situation.
             </p>
             <div className="grid md:grid-cols-2 gap-5 mt-5">
               {selectedIntent !== "final-expense" ? (
@@ -334,28 +334,28 @@ export function GuidedNeedsWorkflow({
                 <ClipboardDocumentCheckIcon className="w-5 h-5 text-cta-text" />
               </div>
               <div>
-                <h2 className="text-xl font-bold text-neutral-900">Your estimated range</h2>
+                <h2 className="text-xl font-bold text-neutral-900">Your coverage range</h2>
                 <p className="text-sm text-neutral-600 mt-1">
-                  This is the value before the handoff. Exact pricing depends on carrier underwriting.
+                  Based on your inputs. A licensed agent confirms your exact rate.
                 </p>
               </div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-4 mt-6">
               <div className="rounded-xl border border-neutral-200 p-5">
-                <p className="text-xs uppercase tracking-wider font-bold text-neutral-500">Conservative</p>
+                <p className="text-xs uppercase tracking-wider font-bold text-neutral-500">Lean</p>
                 <p className="text-2xl font-extrabold text-neutral-900 mt-2">{formatMoney(range.low)}</p>
-                <p className="text-sm text-neutral-600 mt-1">${lowPremium.preferred}/mo likely low end</p>
+                <p className="text-sm text-neutral-600 mt-1">~${lowPremium.preferred}/mo est.</p>
               </div>
               <div className="rounded-xl border-2 border-brand-700 bg-brand-50 p-5">
                 <p className="text-xs uppercase tracking-wider font-bold text-brand-700">Recommended</p>
                 <p className="text-2xl font-extrabold text-brand-900 mt-2">{formatMoney(range.base)}</p>
-                <p className="text-sm text-brand-800 mt-1">${basePremium.standard}/mo planning midpoint</p>
+                <p className="text-sm text-brand-800 mt-1">~${basePremium.standard}/mo est.</p>
               </div>
               <div className="rounded-xl border border-neutral-200 p-5">
                 <p className="text-xs uppercase tracking-wider font-bold text-neutral-500">Higher protection</p>
                 <p className="text-2xl font-extrabold text-neutral-900 mt-2">{formatMoney(range.high)}</p>
-                <p className="text-sm text-neutral-600 mt-1">${highPremium.substandard}/mo cautious high end</p>
+                <p className="text-sm text-neutral-600 mt-1">~${highPremium.substandard}/mo est.</p>
               </div>
             </div>
 
