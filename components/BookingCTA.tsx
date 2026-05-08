@@ -39,18 +39,18 @@ export function BookingCTA() {
     <section className="my-7 bg-brand-900 text-white rounded-xl p-6 md:p-8">
       <div className="grid md:grid-cols-[1fr_auto] gap-6 md:items-center">
         <div>
-          <h2 className="text-2xl font-bold">Ready to get the exact number?</h2>
+          <h2 className="text-2xl font-bold">Ready for your exact rate?</h2>
           <p className="text-brand-200 mt-2 max-w-2xl">
-            Book a 10-minute call with a licensed agent to verify your health class and submit your formal carrier application.
+            Free 10-minute call. A licensed agent reviews your estimate, answers your questions, and submits your application if you're ready.
           </p>
         </div>
         <button
           type="button"
           onClick={openBooking}
-          className="inline-flex items-center justify-center gap-2 bg-cta hover:bg-cta-hover text-white font-bold px-6 py-3 rounded-lg transition-colors"
+          className="inline-flex items-center justify-center gap-2 bg-cta hover:bg-cta-hover text-white font-bold px-6 py-3 rounded-lg transition-colors whitespace-nowrap"
         >
           <CalendarDaysIcon className="w-5 h-5" />
-          Book 10 Minutes
+          Book My Free Call
         </button>
       </div>
 

@@ -15,13 +15,13 @@ export default function HomePage() {
       <section className="bg-brand-900 text-white px-4 py-12 md:py-16">
         <div className="max-w-5xl mx-auto">
           <p className="text-sm font-bold uppercase tracking-wider text-brand-200 mb-4">
-            bestquote.io guided life insurance workflow
+            Licensed &amp; reviewed · FL · TX · CA · NC · SC
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight max-w-3xl">
-            Answer the same questions an agent would ask, then see your estimated range.
+            See your life insurance range before talking to anyone.
           </h1>
-          <p className="text-lg text-brand-200 mt-5 max-w-3xl">
-            The flow identifies your situation, health context, local need, likely coverage amount, and estimated monthly range before asking you to schedule.
+          <p className="text-lg text-brand-200 mt-5 max-w-2xl">
+            4 questions. No email required until you see your number. Reviewed by a licensed agent.
           </p>
         </div>
       </section>

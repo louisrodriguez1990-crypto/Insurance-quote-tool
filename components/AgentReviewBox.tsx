@@ -26,10 +26,10 @@ export function AgentReviewBox({ agent }: { agent: Agent }) {
         </div>
         <div className="min-w-0 flex-1">
           <p className="text-sm font-semibold text-brand-900">
-            Educational data and workflow reviewed by a licensed life insurance agent.
+            Reviewed by a licensed life insurance agent.
           </p>
           <p className="text-sm text-brand-800 mt-1">
-            Licensing details are available for verification before a formal application is submitted.
+            All licensing details are public record — verify before you apply.
           </p>
 
           <details className="mt-3 group">
